@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "573128501902";
+const WHATSAPP_NUMBER = "573103071732";
 
 document.querySelectorAll(".products-slider").forEach((slider) => {
 
@@ -9,19 +9,25 @@ document.querySelectorAll(".products-slider").forEach((slider) => {
     card.className = "product-item";
 
     const message = encodeURIComponent(
-      `Hola 👋, me interesa el tenis ${product.name} por $${product.price.toLocaleString()}`
+      `🔥 *Hola!* 👋%0A` +
+      `Me interesa el tenis *${product.name}* 🏃‍♂️%0A` +
+      `💰 Precio: *$${product.price.toLocaleString()}*%0A` +
+      `👟 Talla: *${product.talla}*%0A%0A` +
+      `¿Está disponible? 🙏%0A` +
+      `¡Gracias! 😊`
     );
-
     const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
-      <h5>${product.name}</h5>
-      <p>${product.talla}</p>
-      <span>$${product.price.toLocaleString()}</span>
-      <a href="${whatsappLink}" target="_blank" class="btn btn-success">
-        Comprar
-      </a>
+      <div class="product-item-content">
+        <h5>${product.name}</h5>
+        <p>${product.talla}</p>
+        <span>$${product.price.toLocaleString()}</span>
+        <a href="${whatsappLink}" target="_blank" class="btn btn-success">
+          Comprar
+        </a>
+      </div>
     `;
 
     slider.appendChild(card);
