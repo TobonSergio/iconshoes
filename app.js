@@ -12,11 +12,11 @@ document.querySelectorAll(".products-slider").forEach((slider, index) => {
     card.className = "product-item";
 
     const message = encodeURIComponent(
-      `🔥 *Hola!* 👋%` +
-      `Me interesa el tenis *${product.name}* 🏃‍♂️%` +
-      `💰 Precio: *$${product.price.toLocaleString()}*%` +
+      `🔥 *Hola!* 👋` +
+      `Me interesa el tenis *${product.name}* 🏃‍♂️` +
+      `💰 Precio: *$${product.price.toLocaleString()}*` +
       `👟 Talla: *${product.talla}*` +
-      `¿Está disponible? 🙏%` +
+      `¿Está disponible? 🙏` +
       `¡Gracias! 😊`
     );
     const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
