@@ -50,7 +50,7 @@ searchForm.addEventListener("submit", function(e) {
     `;
 
     // Aquí asignamos el slider correcto según la categoría
-    if(product.category === "Hombre") {
+    if(product.category === "Caballero") {
       sliders[0].appendChild(card);
     } else if(product.category === "Dama") {
       sliders[1].appendChild(card);
