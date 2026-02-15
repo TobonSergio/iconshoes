@@ -58,6 +58,16 @@
     text-decoration: none;
     font-weight: 500;
     color: #111;
+    border: 1px solid #111; /* Borde negro de 2px */
+    border-radius: 6px;      /* Bordes redondeados opcionales */
+    padding: 8px 16px;       /* Espaciado interno para que se vea como botón */
+    transition: all 0.3s ease; /* Para animaciones suaves al hover */
+}
+
+/* Opcional: efecto hover */
+.view-all-btn:hover {
+    background-color: #eeeeee;
+    color: #000000;
 }
 
 /* Contenedor del slider */
