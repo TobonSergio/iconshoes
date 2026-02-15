@@ -1,0 +1,129 @@
+.main-container {
+    width: 100%;
+}
+
+.cards-categorias-main {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.cards-categorias-main .card {
+    width: 100%;
+    max-width: 550px;
+    height: 80vh;
+    border: none;
+    
+}
+
+.card-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 30px 20px;
+    text-align: center;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2), transparent);
+    color: white;
+}
+
+.card-overlay-text h2 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.div-container-categories {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('/assets/imgCarrusel/pared.jpg');
+    background-size: cover;       /* 🔥 llena todo */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+
+    padding: 6rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-card {
+    width: 100%;
+    max-width: 550px;
+    height: 70vh;
+    border: none;
+    position: relative;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================= */
+/* RESPONSIVE CATEGORIAS */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .category-card {
+    height: 60vh;
+  }
+
+  .h3-categorias {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .div-container-categories {
+    padding: 4rem 1.5rem;
+    min-height: auto;
+  }
+
+  .cards-categorias-main {
+    gap: 2rem;
+  }
+
+  .category-card {
+    height: 50vh;
+  }
+
+  .card-overlay-text h2 {
+    font-size: 2rem;
+  }
+
+  .h3-categorias {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .p-categorias {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .category-card {
+    height: 40vh;
+  }
+
+  .card-overlay-text h2 {
+    font-size: 1.5rem;
+  }
+
+}

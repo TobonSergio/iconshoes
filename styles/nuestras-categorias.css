@@ -1,0 +1,21 @@
+.nuestras-categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h3-categorias {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.p-categorias {
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
