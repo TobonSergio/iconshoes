@@ -133,7 +133,7 @@ const womenProducts = [
     },
     {
         id:2,
-        name: "Nike",
+        name: "Nike Comfor",
         image: "assets/Nike/dama/nikeComfort1.jpg",
         numeracion: "Numeración Dama",
         talla: "Euro 36 - 37 - 38 - 39",
@@ -141,7 +141,7 @@ const womenProducts = [
     },
     {
         id:2,
-        name: "Nike",
+        name: "Nike Metcom",
         image: "assets/Nike/dama/nikeMetcom2.jpg",
         numeracion: "Numeración Dama",
         talla: "Euro 36 - 37 - 38 - 39",
