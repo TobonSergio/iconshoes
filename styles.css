@@ -271,7 +271,7 @@ main.container {
 
 /* Hover street */
 .btn-shop:hover {
-  background-color: #000000;
+  background-color: #ebebeb;
   color: #000;
   transform: scale(1.05);
   box-shadow: 0 0 18px rgba(255,255,255,0.6);
