@@ -89,7 +89,7 @@ const menProducts = [
     },
     {
         id:2,
-        name: "vans",
+        name: "Vans",
         image: "assets/vans/caballero/vans3.jpg",
         numeracion: "Numeración Caballero",
         talla: "Euro 40 - 41 - 42 - 43 - 44",
@@ -149,7 +149,7 @@ const womenProducts = [
     },
     {
         id:2,
-        name: "vans",
+        name: "Vans",
         image: "assets/vans/caballero/vans3.jpg",
         numeracion: "Numeración Dama",
         talla: "Euro 36 - 37 - 38 - 39",
