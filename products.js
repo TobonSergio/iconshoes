@@ -82,7 +82,7 @@ const menProducts = [
     {
         id:2,
         name: "skechers",
-        image: "assets/skechers/caballero/skechers2.jpg",
+        image: "assets/Skechers/caballero/skechers2.jpg",
         numeracion: "Numeración Caballero",
         talla: "Euro 40 - 41 - 42 - 43 - 44",
         price: 185000
