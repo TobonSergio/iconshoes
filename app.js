@@ -1,9 +1,12 @@
 const WHATSAPP_NUMBER = "573103071732";
 
-document.querySelectorAll(".products-slider").forEach((slider) => {
+document.querySelectorAll(".products-slider").forEach((slider, index) => {
+
+// Determinar productos según sección
+  const sectionProducts = index === 0 ? menProducts : womenProducts;
 
   // 🔹 Crear cards
-  products.forEach(product => {
+  sectionProducts.forEach(product => {
 
     const card = document.createElement("div");
     card.className = "product-item";
@@ -34,7 +37,7 @@ document.querySelectorAll(".products-slider").forEach((slider) => {
   });
 
   // 🔹 Controles (busca botones dentro del mismo bloque)
-  const container = slider.closest("main");
+  const container = slider.closest(".carousel-section");
   const nextBtn = container.querySelector(".nextBtn");
   const prevBtn = container.querySelector(".prevBtn");
 

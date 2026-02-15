@@ -82,17 +82,19 @@
 /* Tarjeta producto */
 /* Tarjeta producto GRANDE */
 .product-item {
-  min-width: 420px;       /* ancho desktop */
-  max-width: 420px;
+  min-width: 450px;   /* ancho mínimo */
+  max-width: 520px;   /* ancho máximo en desktop */
+  width: 80%;         /* ocupa un % del slider */
   background: #ffffff;
   border-radius: 10px;
-  text-align: left;       /* 👈 alineación al inicio */
+  text-align: left;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 .product-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.15);
@@ -101,7 +103,7 @@
 /* Imagen ocupa más espacio vertical */
 .product-item img {
   width: 100%;
-  height: 450px;        /* 👈 más alta que antes */
+  height: 500px;        /* 👈 más alta que antes */
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
